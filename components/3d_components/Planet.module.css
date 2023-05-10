@@ -1,15 +1,1 @@
-.htmlWrapper {
-	background-color: aliceblue;
-	width: 40rem;
-	border-radius: 1rem;
-	padding: 1rem;
-	transform: translateY(-150%);
-}
 
-.htmlWrapper .title {
-	font-family: "Roboto Mono", sans-serif;
-}
-
-.htmlWrapper .description {
-	font-family: "Roboto Mono", sans-serif;
-}

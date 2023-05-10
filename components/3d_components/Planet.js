@@ -9,9 +9,15 @@ const Planet = ({ position, title }) => {
 	const meshRef = useRef();
 
 	const [planetClicked, setPlanetClicked] = useState(false);
-	const [showDescription, setShowDescription] = useState(false);
+	const [originalCamera, setOriginalCamera] = useState({});
+
+	const [goBackClicked, setGoBackClicked] = useState(false);
 
 	const vec = new THREE.Vector3();
+
+	const resetCameraPos = (state) => {
+		setGoBackClicked(true);
+	};
 
 	useFrame((state) => {
 		if (planetClicked) {
@@ -21,8 +27,23 @@ const Planet = ({ position, title }) => {
 				0.01
 			);
 			state.camera.updateProjectionMatrix();
-			console.log(state.camera.position);
 		}
+
+		if (!originalCamera.position && planetClicked) {
+			setOriginalCamera({
+				position: state.camera.position.clone(),
+				rotation: state.camera.rotation.clone(),
+			});
+		}
+
+		if (goBackClicked) {
+			state.camera.position.copy(originalCamera.position);
+			state.camera.rotation.copy(originalCamera.rotation);
+			state.camera.updateProjectionMatrix();
+			setGoBackClicked(false);
+			setPlanetClicked(false);
+		}
+
 		return null;
 	});
 
@@ -41,7 +62,7 @@ const Planet = ({ position, title }) => {
 			<mesh
 				position={position}
 				ref={meshRef}
-				onClick={() => setPlanetClicked(!planetClicked)}
+				onClick={() => setPlanetClicked(true)}
 			>
 				<sphereGeometry args={[11, 32, 16]} />
 				<meshStandardMaterial color="#571F8F" />
@@ -56,7 +77,7 @@ const Planet = ({ position, title }) => {
 				</Text>
 				{planetClicked && (
 					<Html center>
-						<PlanetCard title={title} />
+						<PlanetCard title={title} resetCameraPos={resetCameraPos} />
 					</Html>
 				)}
 			</mesh>

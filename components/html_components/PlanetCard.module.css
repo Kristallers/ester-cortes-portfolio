@@ -1,10 +1,28 @@
 .htmlWrapper {
-	background-color: aliceblue;
 	width: 40rem;
-	border-radius: 1rem;
-	padding: 1rem;
 	transform: translateY(-150%);
 	font-family: "Roboto Mono", sans-serif;
+	position: relative;
+}
+
+.goBack {
+	background: none;
+	border: none;
+	font: inherit;
+	color: white;
+	margin: 1rem 0;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.goBack:hover {
+	color: #c39bed;
+}
+
+.cardContentsWrapper {
+	background-color: aliceblue;
+	border-radius: 1rem;
+	padding: 1rem;
 	text-align: center;
 }
 
