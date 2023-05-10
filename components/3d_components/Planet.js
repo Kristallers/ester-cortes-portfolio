@@ -6,17 +6,30 @@ import styles from "./Planet.module.css";
 import PlanetCard from "../html_components/PlanetCard";
 
 const Planet = ({ position, title }) => {
+	// refs
 	const meshRef = useRef();
 
+	// states
 	const [planetClicked, setPlanetClicked] = useState(false);
 	const [originalCamera, setOriginalCamera] = useState({});
-
 	const [goBackClicked, setGoBackClicked] = useState(false);
 
+	// vectors
 	const vec = new THREE.Vector3();
 
-	const resetCameraPos = (state) => {
+	const resetCameraPos = () => {
 		setGoBackClicked(true);
+	};
+
+	const tweenCamera = (start, end, duration) => {
+		return new Promise((resolve) => {
+			new Tween(start)
+				.to(end, duration)
+				.onComplete(() => {
+					resolve();
+				})
+				.start();
+		});
 	};
 
 	useFrame((state) => {
@@ -67,6 +80,7 @@ const Planet = ({ position, title }) => {
 				<sphereGeometry args={[11, 32, 16]} />
 				<meshStandardMaterial color="#571F8F" />
 				<Text
+					font={"/font/RobotoMono-VariableFont_wght.ttf"}
 					position={[0, 0, 0]}
 					scale={[4, 4, 8]}
 					color="white" // default
