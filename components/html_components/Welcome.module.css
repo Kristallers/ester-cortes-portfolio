@@ -6,14 +6,21 @@
 	color: white;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
 	text-align: center;
 	font-family: "Roboto Mono", sans-serif;
 }
 
 .sectionWrapper .title {
-	margin: 8rem;
+	margin: 4rem;
 	font-size: 3rem;
+}
+
+.sectionWrapper .iconWrapper {
+	height: 12rem;
+}
+
+.iconWrapper .icon {
+	min-height: 100%;
 }
 
 .sectionWrapper .text {
