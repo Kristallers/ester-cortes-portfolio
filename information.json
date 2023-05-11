@@ -6,6 +6,8 @@
 			"description": "A memory game made with JavaScript, Html, and CSS. We fetch 8 random Pokémon, duplicate them to create pairs, and then hide them. Scores are stored in the browsers local storage as the time it takes the player to complete, paired with the date and their submitted name.",
 			"bulletpoints": ["JavaScript", "browser storage", "API fetching"],
 			"image": "/projectImages/pokemon.png",
+			"github": true,
+			"deployed": true,
 			"githubLink": "https://github.com/Kristallers/PokeMon-Memory-Game-Ester",
 			"deployedLink": "https://pokemon-memorygame.netlify.app/"
 		},
@@ -15,6 +17,8 @@
 			"description": "A fullstack project where users can send chat messages. Messages are stored in a postgreSQL server, which is hosted on Aiven. The API is built using express.js with sequelize as the ORM. The frontend is React based.",
 			"bulletpoints": ["REST API", "node.js", "express.js", "React.js"],
 			"image": "/projectImages/chat.png",
+			"github": false,
+			"deployed": false,
 			"githubLink": "",
 			"deployedLink": ""
 		},
@@ -24,8 +28,10 @@
 			"description": "This started as a complete beginner three.js experimentation project but quickly turned into an obsession. The spheres are generated using three.js geometry, and the stars are accredited to 3D artist Wayne Pearce on sketchfab.com. I've gotten to explore ways of positioning 3D objects in three.js, animating cameras as well as endless googling.",
 			"bulletpoints": ["Next.js", "Three.js/React three fiber"],
 			"image": "/projectImages/portfolio.png",
-			"githubLink": "",
-			"deployedLink": "" 
+			"github": true,
+			"deployed": true,
+			"githubLink": "https://github.com/Kristallers/ester-cortes-portfolio",
+			"deployedLink": "https://ester-cortes.vercel.app" 
 		}]
 }
 
