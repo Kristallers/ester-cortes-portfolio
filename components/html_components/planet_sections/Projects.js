@@ -29,12 +29,20 @@ const Projects = ({ sectionTitle }) => {
 										})}
 									</ul>
 									<div>
-										<a target="_blank" href={item.deployedLink}>
-											view me live on the web|
-										</a>
-										<a target="_blank" href={item.githubLink}>
-											view code on github
-										</a>
+										{item.deployed ? (
+											<a target="_blank" href={item.deployedLink}>
+												view me live on the web|
+											</a>
+										) : (
+											<span>Deployed version coming soon...</span>
+										)}
+										{item.github ? (
+											<a target="_blank" href={item.githubLink}>
+												view code on github
+											</a>
+										) : (
+											<span>Github link coming soon...</span>
+										)}
 									</div>
 								</article>
 							</li>
