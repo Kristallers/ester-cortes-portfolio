@@ -22,6 +22,11 @@ const Welcome = () => {
 				work on for 8 hours uninterrupted. <br />
 				Now: take a look around!
 			</p>
+			<p className={styles.isMobile}>
+				Pst! This doesn't have a mobile version yet, so: set your mobile broswer
+				to desktop site-mode, and you should be able to view it pretty OK.
+				Sorry!
+			</p>
 		</section>
 	);
 };
