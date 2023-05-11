@@ -62,3 +62,16 @@
 	background-color: #c39bed;
 	cursor: pointer;
 }
+
+.cardContentsWrapper .socials {
+	display: flex;
+	justify-content: center;
+}
+
+.socials .socialsIconContainer {
+	margin: 2rem 2rem 0rem 2rem;
+}
+
+.socials .socialsIconContainer:hover {
+	cursor: pointer;
+}

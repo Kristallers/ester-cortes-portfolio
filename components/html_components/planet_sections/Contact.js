@@ -97,6 +97,31 @@ const Contact = ({ sectionTitle }) => {
 						Send
 					</button>
 				</form>
+				<div className={styles.socials}>
+					<a
+						href="https://www.linkedin.com/in/ester-cortes-288722244/"
+						target="_blank"
+						className={styles.socialsIconContainer}
+					>
+						<div>
+							<img
+								src="./linkedin_icon.svg"
+								alt="bright purple linkedin icon"
+							/>
+						</div>
+						<span>LinkedIn</span>
+					</a>
+					<a
+						href="https://github.com/Kristallers"
+						target="_blank"
+						className={styles.socialsIconContainer}
+					>
+						<div>
+							<img src="./github_icon.svg" alt="bright purple github icon" />
+						</div>
+						<span>Github</span>
+					</a>
+				</div>
 			</section>
 		</>
 	);
