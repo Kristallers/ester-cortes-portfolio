@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./AboutMe.module.css";
 import information from "../../../information.json";
+import Link from "next/link";
 
 const AboutMe = ({ sectionTitle }) => {
 	return (
@@ -21,6 +22,15 @@ const AboutMe = ({ sectionTitle }) => {
 						<p className={styles.description}>{information.aboutInfo[2]}</p>
 					</div>
 				</article>
+				<div className={styles.linkWrapper}>
+					<Link
+						className={styles.downloadCvLink}
+						href="/CV_ester_cortes.pdf"
+						download
+					>
+						Download my CV!
+					</Link>
+				</div>
 			</section>
 		</>
 	);

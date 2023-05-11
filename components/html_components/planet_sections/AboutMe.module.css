@@ -36,3 +36,11 @@
 	font-size: 1rem;
 	margin: 1rem;
 }
+
+.cardContentsWrapper .linkWrapper {
+	margin-top: 1rem;
+}
+
+.linkWrapper .downloadCvLink {
+	color: #571f8f;
+}
