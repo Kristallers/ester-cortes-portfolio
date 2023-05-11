@@ -14,7 +14,7 @@ export default function Home() {
 		<>
 			<div className={styles.appContainer}>
 				<Head>
-					<title>3D Experimenting</title>
+					<title>Ester Cortes</title>
 					<meta name="description" content="Just playing around with 3d" />
 					<meta name="viewport" content="width=device-width, initial-scale=1" />
 					<link rel="icon" href="/favicon.ico" />

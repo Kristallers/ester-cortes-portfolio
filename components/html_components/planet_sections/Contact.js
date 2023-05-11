@@ -53,36 +53,47 @@ const Contact = ({ sectionTitle }) => {
 		<>
 			<section className={styles.cardContentsWrapper}>
 				<h1 className={styles.title}>{sectionTitle}</h1>
-				<form>
+				<form className={styles.formElement}>
 					<input
+						className={styles.inputField}
 						type="text"
 						name="name"
+						placeholder="Name"
 						value={values.name}
 						onChange={handleChange}
 						onBlur={onBlur}
 					/>
 					<input
+						className={styles.inputField}
 						type="email"
 						name="email"
+						placeholder="example@email.com"
 						value={values.email}
 						onChange={handleChange}
 						onBlur={onBlur}
 					/>
 					<input
+						className={styles.inputField}
 						type="text"
 						name="subject"
+						placeholder="Subject"
 						value={values.subject}
 						onChange={handleChange}
 						onBlur={onBlur}
 					/>
 					<textarea
+						className={styles.inputField}
+						rows={6}
 						name="message"
-						placeholder="write your message"
+						placeholder="Write your message"
 						value={values.message}
 						onChange={handleChange}
-						onBlur={onBlur}
 					></textarea>
-					<button type="submit" onClick={onSubmit}>
+					<button
+						className={styles.formButton}
+						type="submit"
+						onClick={onSubmit}
+					>
 						Send
 					</button>
 				</form>
