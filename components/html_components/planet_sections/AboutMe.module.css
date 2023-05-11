@@ -1,0 +1,37 @@
+.cardContentsWrapper {
+	background-color: aliceblue;
+	border-radius: 1rem;
+	padding: 2rem;
+	text-align: center;
+}
+
+.cardContentsWrapper .title {
+	font-size: 2rem;
+	margin: 1rem;
+	margin-top: 0rem;
+}
+
+.cardContentsWrapper .articleWrapper {
+	display: flex;
+	align-items: center;
+	border-top: 1px solid #131313;
+	border-bottom: 1px solid #131313;
+}
+
+.articleWrapper .imageContainer {
+	flex-grow: 1;
+}
+
+.articleWrapper .imageContainer img {
+	height: auto;
+	width: 70%;
+}
+
+.descriptionsContainer {
+	flex-basis: 70%;
+}
+
+.descriptionsContainer .description {
+	font-size: 1rem;
+	margin: 1rem;
+}
