@@ -1,6 +1,5 @@
 .htmlWrapper {
-	width: 40rem;
-	transform: translateY(-150%);
+	width: 60rem;
 	font-family: "Roboto Mono", sans-serif;
 	position: relative;
 }
@@ -17,19 +16,4 @@
 
 .goBack:hover {
 	color: #c39bed;
-}
-
-.cardContentsWrapper {
-	background-color: aliceblue;
-	border-radius: 1rem;
-	padding: 1rem;
-	text-align: center;
-}
-
-.htmlWrapper .title {
-	font-family: "Roboto Mono", sans-serif;
-}
-
-.htmlWrapper .description {
-	font-family: "Roboto Mono", sans-serif;
 }

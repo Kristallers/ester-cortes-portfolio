@@ -1,0 +1,14 @@
+.cardContentsWrapper {
+	background-color: aliceblue;
+	border-radius: 1rem;
+	padding: 2rem;
+	text-align: center;
+	max-height: 80vh;
+}
+
+.cardContentsWrapper .title {
+	font-size: 2rem;
+	margin: 1.5rem;
+	margin-top: 0rem;
+	text-decoration: underline;
+}

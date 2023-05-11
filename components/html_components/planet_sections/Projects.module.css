@@ -1,0 +1,58 @@
+.cardContentsWrapper {
+	background-color: aliceblue;
+	border-radius: 1rem;
+	padding: 2rem;
+	text-align: center;
+	max-height: 80vh;
+	overflow-y: scroll;
+}
+
+.cardContentsWrapper .title {
+	font-size: 2rem;
+	margin: 1.5rem;
+	margin-top: 0rem;
+	text-decoration: underline;
+}
+
+.cardContentsWrapper .listItemsContainer {
+	border-top: 1px solid #131313;
+	border-bottom: 1px solid #131313;
+}
+
+.listItemsContainer .listItem {
+	text-align: left;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	list-style: none;
+	margin: 1rem;
+}
+
+.listItem .imageContainer {
+	width: 40%;
+	object-fit: contain;
+}
+
+.imageContainer .projectImage {
+	max-width: 100%;
+	border-radius: 0.5rem;
+}
+
+.listItem .mainContent {
+	width: 60%;
+	margin-left: 1rem;
+}
+
+.mainContent .projectTitle {
+	margin: 0.5rem 0rem;
+	text-decoration: underline;
+	text-decoration-thickness: 1.5px;
+}
+
+.mainContent .bulletpoints {
+	list-style: none;
+}
+
+.cardContentsWrapper .projectsFooterText {
+	margin: 1rem;
+}

@@ -21,25 +21,15 @@ const Planet = ({ position, title }) => {
 		setGoBackClicked(true);
 	};
 
-	const tweenCamera = (start, end, duration) => {
-		return new Promise((resolve) => {
-			new Tween(start)
-				.to(end, duration)
-				.onComplete(() => {
-					resolve();
-				})
-				.start();
-		});
-	};
-
 	useFrame((state) => {
 		if (planetClicked) {
 			state.camera.lookAt(meshRef.current.position);
 			state.camera.position.lerp(
 				vec.set(position[0], position[1] + 20, -50),
-				0.01
+				0.02
 			);
 			state.camera.updateProjectionMatrix();
+			setPlanetClicked(true);
 		}
 
 		if (!originalCamera.position && planetClicked) {
@@ -52,6 +42,7 @@ const Planet = ({ position, title }) => {
 		if (goBackClicked) {
 			state.camera.position.copy(originalCamera.position);
 			state.camera.rotation.copy(originalCamera.rotation);
+			state.camera.lookAt(originalCamera.position);
 			state.camera.updateProjectionMatrix();
 			setGoBackClicked(false);
 			setPlanetClicked(false);
@@ -75,7 +66,13 @@ const Planet = ({ position, title }) => {
 			<mesh
 				position={position}
 				ref={meshRef}
-				onClick={() => setPlanetClicked(true)}
+				onClick={() => {
+					if (!planetClicked) {
+						setPlanetClicked(true);
+					} else {
+						console.log(planetClicked);
+					}
+				}}
 			>
 				<sphereGeometry args={[11, 32, 16]} />
 				<meshStandardMaterial color="#571F8F" />

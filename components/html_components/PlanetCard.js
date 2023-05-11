@@ -11,9 +11,9 @@ const planetCard = ({ title, resetCameraPos }) => {
 				<button className={styles.goBack} onClick={resetCameraPos}>
 					&lt; Go Back{" "}
 				</button>
-				{title === "About me" && <AboutMe title={title} />}
-				{title === "Projects" && <Projects title={title} />}
-				{title === "Contact" && <Contact title={title} />}
+				{title === "About me" && <AboutMe sectionTitle={title} />}
+				{title === "Projects" && <Projects sectionTitle={title} />}
+				{title === "Contact" && <Contact sectionTitle={title} />}
 			</div>
 		</>
 	);
