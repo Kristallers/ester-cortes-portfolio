@@ -6,7 +6,7 @@
 /* Firefox */
 * {
 	scrollbar-width: thin;
-	scrollbar-color: red;
+	scrollbar-color: rgb(87, 31, 143);
 }
 
 /* Chrome, Edge, and Safari */
@@ -26,6 +26,6 @@
 	border: 3px solid rgba(87, 31, 143, 0.4);
 }
 
-::-webkit-scrollbar-thumb:hover {
+*::-webkit-scrollbar-thumb:hover {
 	background-color: rgba(202, 159, 244, 0.7);
 }
