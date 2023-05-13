@@ -11,12 +11,13 @@
 }
 
 .sectionWrapper .title {
-	margin: 4rem;
+	margin: 2rem;
 	font-size: 3rem;
 }
 
 .sectionWrapper .iconWrapper {
 	height: 12rem;
+	margin-top: 4rem;
 }
 
 .iconWrapper .icon {

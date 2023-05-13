@@ -53,6 +53,14 @@
 	list-style: none;
 }
 
+.mainContent .link {
+	color: #571f8f;
+}
+
+.mainContent .link:hover {
+	color: #c39bed;
+}
+
 .cardContentsWrapper .projectsFooterText {
 	margin: 1rem;
 }

@@ -53,6 +53,7 @@ const Contact = ({ sectionTitle }) => {
 		<>
 			<section className={styles.cardContentsWrapper}>
 				<h1 className={styles.title}>{sectionTitle}</h1>
+				<p>Get in touch! I'd love to chat (: </p>
 				<form className={styles.formElement}>
 					<input
 						className={styles.inputField}

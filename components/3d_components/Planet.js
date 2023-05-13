@@ -4,6 +4,7 @@ import { Html, useTexture, Text } from "@react-three/drei";
 import * as THREE from "three";
 import styles from "./Planet.module.css";
 import PlanetCard from "../html_components/PlanetCard";
+import { useLoader } from "@react-three/fiber";
 
 const Planet = ({ position, title }) => {
 	// refs
@@ -61,6 +62,9 @@ const Planet = ({ position, title }) => {
 		}
 	});
 
+	// const img = "./ester_cortes_image.png";
+
+	// const texture = useLoader(THREE.TextureLoader, img);
 	return (
 		<>
 			<mesh
@@ -76,12 +80,13 @@ const Planet = ({ position, title }) => {
 			>
 				<sphereGeometry args={[11, 32, 16]} />
 				<meshStandardMaterial color="#571F8F" />
+
 				<Text
 					font={"/font/RobotoMono-VariableFont_wght.ttf"}
 					position={[0, 0, 0]}
 					scale={[4, 4, 8]}
-					color="white" // default
-					anchorX="center" // default
+					color="white"
+					anchorX="center"
 					anchorY={4}
 				>
 					{title}

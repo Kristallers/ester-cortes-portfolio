@@ -4,7 +4,6 @@ import styles from "./Welcome.module.css";
 const Welcome = () => {
 	return (
 		<section className={styles.sectionWrapper}>
-			<h1 className={styles.title}>I'm Ester Cortés</h1>
 			<div className={styles.iconWrapper}>
 				<img
 					src="/ester_cortes_image.png"
@@ -12,6 +11,7 @@ const Welcome = () => {
 					className={styles.icon}
 				/>
 			</div>
+			<h1 className={styles.title}>I'm Ester Cortés</h1>
 
 			<p className={styles.text}>
 				A frontend developer...Who spent way too long trying to make these

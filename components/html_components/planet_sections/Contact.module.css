@@ -13,6 +13,10 @@
 	text-decoration: underline;
 }
 
+.cardContentsWrapper p {
+	margin: 1rem;
+}
+
 .cardContentsWrapper .formElement {
 	display: flex;
 	flex-direction: column;
@@ -70,8 +74,10 @@
 
 .socials .socialsIconContainer {
 	margin: 2rem 2rem 0rem 2rem;
+	color: #571f8f;
 }
 
 .socials .socialsIconContainer:hover {
 	cursor: pointer;
+	color: #c39bed;
 }
