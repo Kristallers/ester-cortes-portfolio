@@ -14,7 +14,7 @@
 		{
 			"id": "2",
 			"title": "Chat app",
-			"description": "A fullstack project where users can send chat messages. Messages are stored in a postgreSQL server, which is hosted on Aiven. The API is built using express.js with sequelize as the ORM. The frontend is React based.",
+			"description": "A fullstack project where users can send chat messages. Messages are stored in a postgreSQL database, which is hosted on Aiven. The API is built using express.js with sequelize as the ORM. The frontend is React based.",
 			"bulletpoints": ["REST API", "node.js", "express.js", "React.js"],
 			"image": "/projectImages/chat.png",
 			"github": true,
