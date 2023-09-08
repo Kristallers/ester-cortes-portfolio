@@ -26,7 +26,7 @@
 			"id": "3",
 			"title": "This portfolio",
 			"description": "This started as a complete beginner three.js experimentation project but quickly turned into an obsession. The spheres are generated using three.js geometry, and the stars are accredited to 3D artist Wayne Pearce on sketchfab.com. I've gotten to explore ways of positioning 3D objects in three.js, animating cameras as well as endless googling.",
-			"bulletpoints": ["Next.js", "Three.js/React three fiber"],
+			"bulletpoints": ["Next.js", "Three.js/React three fiber", "sendgrid/nodemailer"],
 			"image": "/projectImages/portfolio.png",
 			"github": true,
 			"deployed": true,
